@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- my CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Covid-19</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+      <!-- navbar, gunakan yg fixed agar ketika di scroll tetap -->
+      <!-- setelah nav simpan container agar logo tidak terlalu mepet ke kiri -->
+      <!-- menggunakan side bar agar logo responsif -->
+      
+    <div class="navbar-fixed">
+      <nav class="deep-purple accent-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo">Penyebaran Covid-19</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#berita">Berita Terkini</a></li>
+              <li><a href="#peta">Cek Peta Zona Red</a></li>
+              <li><a href="#game">Games</a></li>
+              <li><a href="#pola">Pola Hidup Sehat</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- untuk memunculkan side nav, id harus sama dengan data target dan harus menjalankan jsnya -->
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">Berita Terkini</a></li>
+      <li><a href="">Cek Peta Zona Red</a></li>
+      <li><a href="">Games</a></li>
+      <li><a href="">Pola hidup sehat</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+    
+    <!-- slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/slider/1.png"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/2.png"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/3.png"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- bagian About Us, scrolspy buat kalo di klkik ngegeser -->
+    <section id="berita" class="berita scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="center light grey-text text-darken-3">Berita Terkini</h3>
+          <div class="col m6 light">
+            <h5>We Are Professionals</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores deleniti, non nihil repudiandae laborum deserunt facere praesentium blanditiis officia iusto, animi eaque repellat aliquam accusamus ea quisquam eum veritatis? Dolorem.</p>
+          </div>
+          <div class="col m6 light">
+            <p>WEB DEVELOPMENT</p>
+              <div class="progress">
+                <div class="determinate blue" style="width: 95%"></div>
+            </div>
+             <p>MOBILE APP DEVELOPMENT</p>
+              <div class="progress">
+                <div class="determinate blue" style="width: 85%"></div>
+            </div>
+             <p>GAME DEVELOPMENT</p>
+              <div class="progress">
+                <div class="determinate blue" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- clients, paralax -->
+    <div id="peta" class="parallax-container scrollspy">
+      <div class="parallax"><img src="img/slider/4.png"></div>
+    
+      <div class="container clients">
+        <h3 class="center light white-text">Cek peta zona red</h3>
+        <div class="row">
+          <div class="col m4 s12 center">
+            <img src="img/clients/gojek.png">
+          </div>
+          <div class="col m4 s12 center">
+            <img src="img/clients/tokopedia.png">
+          </div>
+          <div class="col m4 s12 center">
+            <img src="img/clients/traveloka.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- untuk services, bikin setion -->
+    <!-- col m4 total col dari 12 dibaagi 3 s 12 untuk di hp -->
+    <section id="game" class="game grey lighten-3 scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">Games</h3>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">desktop_windows</i>
+              <h5>Web Development</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, saepe.</p>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">developer_mode</i>
+              <h5>Mobile App</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, saepe.</p>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">games</i>
+              <h5>Game Development</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, saepe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- portfolio -->
+    <section id="pola" class="pola scrollspy">
+      <div class="container">
+        <h3 class="light center grey-text text-darken-3">Pola Hidup Sehat</h3>
+        <div class="row">
+          <div class="col m3 s12">
+            <img src="img/portfolio/1.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col m3 s12">
+            <img src="img/portfolio/2.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col m3 s12">
+            <img src="img/portfolio/3.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col m3 s12">
+            <img src="img/portfolio/4.png" class="responsive-img materialboxed">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m3 s12">
+            <img src="img/portfolio/5.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col m3 s12">
+            <img src="img/portfolio/6.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col m3 s12">
+            <img src="img/portfolio/1.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col m3 s12">
+            <img src="img/portfolio/2.png" class="responsive-img materialboxed">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- buat contact us, card panel untuk kolom kotak -->
+    <section id="contact" class="contact grey lighten-3 scrollspy">
+      <div class="container">
+        <h3 class="light center grey-text text-darken-3">Contact Us</h3>
+        <div class="row">
+          <div class="col m5 s12">
+            <div class="card-panel blue darken-2 center white-text">
+              <i class="material-icons">email</i>
+              <h5>Contact</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <ul class="collection width-header">
+               <li class="collection-header grey lighten-3"><h4>Our Offices</h4></li>
+              <li class="collection-item grey lighten-3">Fisika</li>
+              <li class="collection-item grey lighten-3">Universitas Padjajaran</li>
+              <li class="collection-item grey lighten-3">West Java</li>
+            </ul>
+          </div>
+
+          <div class="col m7 s12">
+            <form action="">
+              <div class="card-panel">
+                <h5>Please fill out this form</h5>
+                <div class="input-field">
+                  <input type="text" name="name" id="name" required class="validate">
+                  <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                  <input type="email" name="email" id="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" name="phone" id="phone">
+                  <label for="phone">Phone Number</label>
+                </div>
+                <div class="input-field">
+                  <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn blue darken-2">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bikin footer,harus dikasih padding, flow text biar responsif -->
+    <footer class="blue darken-2 white-text center">
+      <p class="flow-text">Padjadjaran Lab 2020</p>
+    </footer>
+
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <!-- bikikn script untuk sidenav,ambil dulu elemen navbar -->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        // material lize jalankan fitur nav insialisasi elemen sidenav
+        M.Sidenav.init(sideNav);
+
+        // untuk slider
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators : false,
+          height : 500,
+          transition : 600,
+          interval : 4000
+        });
+        // const parallax, parallax variabel, di query pake class, parallax
+        const parallax = document.querySelectorAll('.parallax');
+        // ini parallax dari variabel
+        M.Parallax.init(parallax);  
+
+        // materialbox agar gambar bisa di klik
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+
+        // bikin scrollspy
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll, {
+          scrollOffset: 50
+        });
+
+      </script>
+    </body>
+  </html>
+
+        
